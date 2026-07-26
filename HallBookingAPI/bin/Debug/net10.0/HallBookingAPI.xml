@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HallBookingAPI</name>
+    </assembly>
+    <members>
+        <member name="T:HallBookingAPI.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:HallBookingAPI.Migrations.AddServicesAndBookingUpdates">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.AddServicesAndBookingUpdates.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.AddServicesAndBookingUpdates.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.AddServicesAndBookingUpdates.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:HallBookingAPI.Migrations.AddServiceAndUpdates">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.AddServiceAndUpdates.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.AddServiceAndUpdates.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.AddServiceAndUpdates.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:HallBookingAPI.Migrations.AddTotalPriceToBooking">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.AddTotalPriceToBooking.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.AddTotalPriceToBooking.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HallBookingAPI.Migrations.AddTotalPriceToBooking.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>

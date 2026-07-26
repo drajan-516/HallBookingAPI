@@ -205,3 +205,5 @@ D:\Programming\HallBookingAPI\HallBookingAPI\HallBookingAPI\obj\Debug\net10.0\Ha
 D:\Programming\HallBookingAPI\HallBookingAPI\HallBookingAPI\obj\Debug\net10.0\HallBookingAPI.genruntimeconfig.cache
 D:\Programming\HallBookingAPI\HallBookingAPI\HallBookingAPI\obj\Debug\net10.0\ref\HallBookingAPI.dll
 D:\Programming\HallBookingAPI\HallBookingAPI\HallBookingAPI\obj\Debug\net10.0\HallBookingAPI.sourcelink.json
+D:\Programming\HallBookingAPI\HallBookingAPI\HallBookingAPI\bin\Debug\net10.0\HallBookingAPI.xml
+D:\Programming\HallBookingAPI\HallBookingAPI\HallBookingAPI\obj\Debug\net10.0\HallBookingAPI.xml

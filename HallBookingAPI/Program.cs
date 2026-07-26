@@ -1,7 +1,7 @@
-﻿using HallBookingAPI.Persistence;
+﻿using System.Reflection;
+using HallBookingAPI.Persistence;
 using HallBookingAPI.Persistence.Repositories;
 using HallBookingAPI.Persistence.Repositories.IRepositories;
-using HallBookingAPI.Services;
 using HallBookingAPI.Exceptions;
 using HallBookingAPI.UseCases.Bookings;
 using HallBookingAPI.UseCases.Halls;
@@ -14,7 +14,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<HallService>();
 
 builder.Services.AddScoped<IHallRepository, HallRepository>();
 builder.Services.AddScoped<IBookingRepository, BookingRepository>();
@@ -29,9 +28,15 @@ builder.Services.AddScoped<CreateBooking>();
 builder.Services.AddScoped<CreateService>();
 
 
-
 builder.Services.AddDbContext<HallDbContext>(options =>
     options.UseSqlite("Data Source=bookings.db"));
+
+builder.Services.AddSwaggerGen(options =>
+{
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    options.IncludeXmlComments(xmlPath);
+});
 
 var app = builder.Build();
 
