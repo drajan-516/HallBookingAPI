@@ -23,22 +23,16 @@ public class BookingsController : ControllerBase
     );
 
     [HttpPost]
+    [HttpPost]
     public IActionResult Create([FromBody] CreateBookingRequest request)
     {
-        var (booking, totalPrice) = _createBooking.Execute(
+        var booking = _createBooking.Execute(
             request.HallId,
             request.StartDateTime,
             request.EndDateTime,
             request.ServiceIds ?? new List<int>()
         );
 
-        return Ok(new
-        {
-            bookingId = booking.Id,
-            hallId = booking.HallId,
-            start = booking.StartDateTime,
-            end = booking.EndDateTime,
-            totalPrice
-        });
+        return Ok(booking);
     }
 }

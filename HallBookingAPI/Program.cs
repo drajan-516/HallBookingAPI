@@ -5,6 +5,7 @@ using HallBookingAPI.Services;
 using HallBookingAPI.Exceptions;
 using HallBookingAPI.UseCases.Bookings;
 using HallBookingAPI.UseCases.Halls;
+using HallBookingAPI.UseCases.Reports;
 using HallBookingAPI.UseCases.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,12 +15,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<HallService>();
-builder.Services.AddScoped<BookingService>();
 
 builder.Services.AddScoped<IHallRepository, HallRepository>();
 builder.Services.AddScoped<IBookingRepository, BookingRepository>();
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
 
+builder.Services.AddScoped<GetRevenueByHall>();
 builder.Services.AddScoped<CreateHall>();
 builder.Services.AddScoped<UpdateHall>();
 builder.Services.AddScoped<DeleteHall>();

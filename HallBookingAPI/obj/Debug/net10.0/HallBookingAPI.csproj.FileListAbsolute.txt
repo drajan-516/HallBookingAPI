@@ -204,3 +204,4 @@ D:\Programming\HallBookingAPI\HallBookingAPI\HallBookingAPI\obj\Debug\net10.0\re
 D:\Programming\HallBookingAPI\HallBookingAPI\HallBookingAPI\obj\Debug\net10.0\HallBookingAPI.pdb
 D:\Programming\HallBookingAPI\HallBookingAPI\HallBookingAPI\obj\Debug\net10.0\HallBookingAPI.genruntimeconfig.cache
 D:\Programming\HallBookingAPI\HallBookingAPI\HallBookingAPI\obj\Debug\net10.0\ref\HallBookingAPI.dll
+D:\Programming\HallBookingAPI\HallBookingAPI\HallBookingAPI\obj\Debug\net10.0\HallBookingAPI.sourcelink.json

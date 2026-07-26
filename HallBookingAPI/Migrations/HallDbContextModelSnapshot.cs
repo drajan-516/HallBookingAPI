@@ -32,6 +32,9 @@ namespace HallBookingAPI.Migrations
                     b.Property<DateTime>("StartDateTime")
                         .HasColumnType("TEXT");
 
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.ToTable("Bookings");

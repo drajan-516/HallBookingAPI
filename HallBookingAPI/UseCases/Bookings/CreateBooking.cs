@@ -1,5 +1,6 @@
 ﻿using HallBookingAPI.Entities;
 using HallBookingAPI.Errors;
+using HallBookingAPI.Exceptions;
 using HallBookingAPI.Persistence.Repositories.IRepositories;
 using HallBookingAPI.UseCases.Pricing;
 
@@ -21,15 +22,11 @@ public class CreateBooking
         _serviceRepository = serviceRepository;
     }
 
-    public (Booking Booking, decimal TotalPrice) Execute(
-        int hallId,
-        DateTime start,
-        DateTime end,
-        List<int>? serviceIds)
+    public Booking Execute(int hallId, DateTime start, DateTime end, List<int> serviceIds)
     {
         var hall = _hallRepository.GetById(hallId);
         if (hall == null)
-            throw new ArgumentException(HallErrors.NotFound(hallId).Description);
+            throw new NotFoundException(HallErrors.NotFound(hallId).Description);
 
         var isAvailable = _bookingRepository.IsHallAvailable(hallId, start, end);
         if (!isAvailable)
@@ -41,9 +38,9 @@ public class CreateBooking
         var servicesCost = selectedServices.Sum(s => s.Price);
         var totalPrice = hallCost + servicesCost;
 
-        var booking = Booking.Create(hallId, start, end);
+        var booking = Booking.Create(hallId, start, end, totalPrice);
         _bookingRepository.Add(booking);
 
-        return (booking, totalPrice);
+        return booking;
     }
 }
